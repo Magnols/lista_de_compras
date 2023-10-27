@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+}
+
+.adicionar-intens {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    width: 600px;
+    height: 150px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    margin: 20px auto 0px auto;
+    font-size: 15px;
+}
+
+.adicionar-intens input {
+    width: 99%;
+    height: 20px;
+    display: block;
+}
+
+.button {
+    border: none;
+    text-align: center;
+}
+
+.btn1 {
+    background-color: #3498db;
+    width: 100px;
+    height: 25px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.btn1:hover {
+    background-color: rgba(0, 183, 255, 0.75);
+}
+
+.btn2 {
+    background-color: #aa0000;
+    width: 100px;
+    height: 25px;
+    color: rgb(255, 254, 254);
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 8px;
+}
+
+.btn2:hover {
+    background-color: rgb(255, 0, 0);
+    color: rgb(2, 2, 2);
+}
+
+.btn1:disabled:hover,
+.btn2:disabled:hover {
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.btn1:disabled,
+.btn2:disabled {
+    background-color: #ccc;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+.lista-compras {
+    list-style: none;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoria {
+    background-color: #fff;
+    width: 290px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 992px) {
+    .adicionar-intens {
+        width: 90%;
+        height: 160px;
+        flex-direction: column;
+    }
+    .adicionar-intens input,
+    .adicionar-intens select,
+    .adicionar-intens button {
+        width: 100%;
+    }
+    .adicionar-intens button {
+        margin-bottom: 10px;
+    }
+    .categoria {
+        width: 95%;
+    }
+}

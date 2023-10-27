@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <h1>Lista de Compras</h1>
+    <div id="app">
+        <form>
+            <fieldset class="adicionar-intens">
+                <legend>Adicionar intens na lista de compras</legend>
+                <label for="itemInput">Qual item você deseja inserir?</label>
+                <input type="text" name="categoria" id="itemInput">
+                <label for="itemCategoria">Em qual categoria essa comida se encaixa?</label>
+                <select name="categoria" id="itemCategoria">
+                    <option value="">Escolha uma categoria</option>
+                    <optgroup label="Categorias">
+                        <option value="Frutas">Frutas</option>
+                        <option value="Congelados">Congelados</option>
+                        <option value="Laticinios">Laticínios</option>
+                        <option value="Doces">Doces</option>
+                        <option value="Outros">Outros</option>
+                    </optgroup>
+                </select>
+
+                <div class="button">
+                    <button type="button" class="btn1" id="adicionarButton">Adicionar</button>
+                    <button type="button" class="btn2" id="removerButton" disabled>Remover</button>
+                </div>
+            </fieldset>
+        </form>
+        <ul class="lista-compras">
+            <li class="categoria Frutas">
+                <h2>Frutas</h2>
+                <ul id="FrutasList"></ul>
+            </li>
+            <li class="categoria Laticínios">
+                <h2>Laticínios</h2>
+                <ul id="LaticiniosList"></ul>
+            </li>
+            <li class="categoria Congelados">
+                <h2>Congelados</h2>
+                <ul id="CongeladosList"></ul>
+            </li>
+            <li class="categoria Doces">
+                <h2>Doces</h2>
+                <ul id="DocesList"></ul>
+            </li>
+            <li class="categoria Outros">
+                <h2>Outros</h2>
+                <ul id="OutrosList"></ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
